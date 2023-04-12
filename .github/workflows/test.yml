@@ -18,7 +18,7 @@ jobs:
 
       - name: Create virtual audio cable
         run: |
-          pacmd load-module module-null-sink sink_name=Virtual_Sink sink_properties=device.description=Virtual_Sink
+          sudo pacmd load-module module-null-sink sink_name=Virtual_Sink sink_properties=device.description=Virtual_Sink
 
       - name: Use Node.js
         uses: actions/setup-node@v3
