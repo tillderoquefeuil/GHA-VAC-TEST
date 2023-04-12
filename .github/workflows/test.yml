@@ -27,5 +27,8 @@ jobs:
         with:
           version: 7
 
-      - name: Build
+      - name: Install npm dependencies
+        run: pnpm install
+
+      - name: Dev
         run: pnpm dev
